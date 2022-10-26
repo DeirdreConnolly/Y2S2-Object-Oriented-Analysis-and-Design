@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build">
+	<path id="build.classpath">
+		<pathelement location="classes"/>
+	</path>
+	<target name="init">
+		<mkdir dir="classes"/>
+	</target>
+	<target name="clean">
+		<delete dir="classes"/>
+	</target>
+	<target depends="init" name="build">
+		<javac srcdir="." destdir="classes" source="1.5" target="1.5" fork="yes">
+			<classpath refid="build.classpath"/>
+			<include name="Hope_Music_Academy.java"/>
+			<include name="ExamController.java"/>
+			<include name="Initial_Assesment.java"/>
+			<include name="Exam.java"/>
+			<include name="Standardized_Exams.java"/>
+			<include name="Term.java"/>
+			<include name="Tuition.java"/>
+			<include name="SearchController.java"/>
+			<include name="Tutor.java"/>
+			<include name="LoanController.java"/>
+			<include name="Piano.java"/>
+			<include name="Percussion.java"/>
+			<include name="Strings.java"/>
+			<include name="Woodwind.java"/>
+			<include name="Instrument.java"/>
+			<include name="Singing.java"/>
+			<include name="Lesson.java"/>
+			<include name="Student_Card.java"/>
+			<include name="RegisterController.java"/>
+			<include name="Waiting_List.java"/>
+			<include name="Adult.java"/>
+			<include name="Child.java"/>
+			<include name="Teenager.java"/>
+			<include name="Student.java"/>
+			<include name="School.java"/>
+			<include name="Orchestra.java"/>
+			<include name="Concert.java"/>
+			<include name="Award.java"/>
+		</javac>
+	</target>
+</project>
